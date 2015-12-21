@@ -2,13 +2,23 @@ body {
 	background-color: #cacccc;
 	font-family: sans-serif;
 	margin: 0;
-	a:link: #black;
-	a:visited:;
+}
+
+a:link {
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+a:hover {
+	color: gray;
 }
 
 header {
 	display: inline;
-	margin: 5px 0px 0px 20px;
+	margin: 0px 0px 0px 50px;
 	font-size: 48px;
 	font-weight: lighter;
 	letter-spacing: .2em;
@@ -16,8 +26,7 @@ header {
 
 nav {
 	padding: 2px;
-	margin: 0px 0px 25px 20px;
-	a:link: #000000;
+	margin: 0px 0px 25px 50px;
 }
 
 nav ul {
@@ -33,11 +42,11 @@ nav ul li {
 
 nav ul li a {
 	text-decoration: none;
-	a:link: #000000;
 }
 
 main {
 	/*border: 2px solid black;*/
+	margin: 0px 0px 0px 75px;
 	font-size: 16px;
 }
 
