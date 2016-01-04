@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+    <title>tim l kelly</title>
+  </head>
+  <body>
+    <header>
+      timkelly
+    </header>
+    <nav>
+      <ul>  
+        <li><a href="index.html">blog</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+        <li><a href="contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Arrays and Hashes</h2>
+      1.3.2016
+      <br>
+      <p>
+      Ruby uses Arrays and Hashes to store collections of objects. Objects include strings, integers, arrays,
+      hashes, nil, true, false, etc.  While they both fundamentally do the same thing, they do so in different
+      ways. Before we get into their differences let's look at some more similarities.
+      </p>  
+      <p>
+      As noted above, they both store a collection of objects. Additionally, arrays and hashes both share a lot
+      of similar notation.  To create a new array you 
+      could use either:<pre>Array.new<br>array = []</pre> And as you can imagine Hashes can be created like so:
+      <pre>Hash.new<br>hash = {}</pre> You may have noticed that arrays use square brackets <code>[]</code> while 
+      hashes use curly brackets <code>{}</code>
+      </p>
+      <p>
+      Now that the Array and Hash exist, we can add data to them.
+      <pre>array[0] = 72<br>hash = ["key"] = "value"</pre>
+      Here is where we start to get to their differences.  Both store data which can be accessed through an 
+      index. Arrays use an integer index. In the example above we are setting the 0-th spot of the array to 72. 
+      Hashes use a key/value pair. The key can be anything as long as it is unique and it will be assigned to a
+      specific value.  Arrays also remember the order in which objects were entered into them. Hashes now also
+      remember the order of insertion (thanks to Ruby 1.9!) though they previous did not.
+      </p>
+      <p>
+      The two seem pretty similar, so when do you use which?  If your data needs a specific label, a hash is the
+      best answer. This way you can customize the keys to all of the data. Otherwise you could use an array. If 
+      order is important you can use an array.  Yes, hashes now too keep order in mind but it seems that
+      arrays are usually used to store ordered information. Lastly, arrays are good for queue or stack structure. 
+    </main>
+
+    <aside>
+      <ul>
+        <li><b>Navigation</b><li>
+          <ul>
+            <li>(links previous posts)</li>
+          </ul>
+        <br>
+        <li><b>Links</b></li>
+        <br>
+        <li><b>Contact</b></li>
+      </ul>
+    </aside>
+
+    <footer>
+      footer
+    </footer>
+
+  </body>
+</html>
