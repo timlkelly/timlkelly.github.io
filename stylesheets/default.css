@@ -17,6 +17,7 @@ a:hover {
 }
 
 header {
+  /*border: 2px solid black;*/
 	display: inline;
 	margin: 0px 0px 0px 50px;
 	font-size: 48px;
@@ -25,8 +26,10 @@ header {
 }
 
 nav {
+  /*border: 2px solid black;*/
 	padding: 2px;
 	margin: 0px 0px 25px 50px;
+
 }
 
 nav ul {
@@ -46,8 +49,49 @@ nav ul li a {
 
 main {
 	/*border: 2px solid black;*/
+  display: inline-block;
 	margin: 0px 0px 0px 75px;
 	font-size: 16px;
+  width: 60%;
+}
+
+aside {
+  /*border: 2px solid black;*/
+  display: inline-block;
+  position: absolute;
+  padding: 5px;
+  margin: 0px 0px 9px 30px;
+}
+
+aside img {
+  height: 30px;
+  width: 30px;
+}
+
+aside ul {
+  list-style-type: none;
+  /*display: inline;*/
+  border: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+aside ul li {
+/*  display: inline;*/
+}
+
+#social-icons {
+  display: inline;
+}
+
+aside ul li a {
+  text-decoration: none;
+}
+
+pre {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #a1a3a3;
 }
 
 footer {
