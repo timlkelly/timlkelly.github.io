@@ -1,7 +1,7 @@
-body {
-	background-color: #cacccc;
-	font-family: sans-serif;
-	margin: 0;
+* {
+  margin: 0px;
+  font-family: Arial, sans-serif;
+  background-color: #cacccc;
 }
 
 a:link {
@@ -17,16 +17,20 @@ a:hover {
 }
 
 header {
-  /*border: 2px solid black;*/
-	display: inline;
+  border: 2px solid black;
+	/*display: inline;*/
 	margin: 0px 0px 0px 50px;
 	font-size: 48px;
 	font-weight: lighter;
 	letter-spacing: .2em;
+  background-color: #fff;
+  opacity: .25;
+  filter: blur(25px);
+
 }
 
 nav {
-  /*border: 2px solid black;*/
+  border: 2px solid black;
 	padding: 2px;
 	margin: 0px 0px 25px 50px;
 
