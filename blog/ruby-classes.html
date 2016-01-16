@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <title>tim l kelly</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">timkelly</a>
+    </header>
+    <nav>
+      <ul>  
+        <li><a href="index.html">blog</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Ruby Classes</h2>
+      1.15.2016
+      <br>
+      <p>
+        When working with objects that share similar characteristics but are different from each other, classes can offer 
+        simplicity and organization.  Classes can hold a number of variables and methods that are specific to that class 
+        object.  Let's make a class to keep track of all of the books in your library! We start by defining our new class 
+        and what it should do when we make an instance of one. We can also define the title and author when we create a new
+        book.  Classes use both local and instance variables.  Local variables, as their name suggests, are limited to the 
+        method they're a part of.  Instance variables however are available to the entire instance or specific object of 
+        that class.  Instance variables are denoted with the @ symbol. 
+        <pre>class Books <br> def initialize(title, author) <br>  @title = title <br>  @author = author <br> end <br>end</pre>
+        Here we have created our class Books, which requires two arguments upon creation.  It then sets instance variables
+        those arguments equal to the supplied arguments.  To call an instance of our new class. type:
+        <pre>first_book = Books.new("Ulysses", "James Joyce")</pre>
+      </p>
+      <p>
+        Our class doesn't do much right now, so let's add some more to it! Instance variables are shared across the object,
+        so let's create some methods to access their value so other methods can reference them as well. We'll do this with
+        a rather simple method that looks like this:
+        <pre>def title <br> @title<br>end<br><br>def author <br> @author <br>end</pre>
+        Now whenever you call the method <code>title</code>, it will return <code>@title</code> and similarly for <code>
+        author</code>.
+      </p>
+      <p>
+        Okay, that's great but our class still doesn't do much.
+        <pre>def info <br> puts title + "," + author <br>end</pre>
+        Now we can call our <code>info</code> on a class we've created and it will print out the title and author
+        <pre>first_book.info</pre>
+        Like instance variables, these are instance methods.  They are available to the entire instance
+        of this particular class. As you can imagine we could create more methods to add more information to our class 
+        like publisher, copyright date, plot, etc.  
+      </p>
+    </main>
+    <footer>
+      footer
+    </footer>
+
+  </body>
+</html>

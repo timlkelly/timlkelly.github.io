@@ -1,39 +1,83 @@
 * {
-  margin: 0px;
+
+}
+
+body {
   font-family: Arial, sans-serif;
-  background-color: #cacccc;
+  margin: 0px;
+  background-color: #FFF;
+  background-image: url("../imgs/camden.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:link {
-	color: #000000;
+	color: #000;
 }
 
 a:visited {
-	color: #000000;
+	color: #000;
 }
 
 a:hover {
-	color: gray;
+	color: #000;
 }
 
 header {
   border: 2px solid black;
 	/*display: inline;*/
-	margin: 0px 0px 0px 50px;
+	margin: 30px 0px 0px 50px;
 	font-size: 48px;
 	font-weight: lighter;
 	letter-spacing: .2em;
-  background-color: #fff;
-  opacity: .25;
-  filter: blur(25px);
+  color: #FFF;
+  background-color: #000;
+  opacity: .6;
+}
 
+header a:link {
+  color: #FFF;
+}
+
+header a:visited {
+  color: #FFF;
+}
+
+header a:hover {
+  color: #FFF;
 }
 
 nav {
-  border: 2px solid black;
+  /*border: 2px solid black;*/
 	padding: 2px;
 	margin: 0px 0px 25px 50px;
+  background-color: #000;
+  opacity: .6;
+}
 
+nav a:link {
+  color: #FFF;
+}
+
+nav a:visited {
+  color: #FFF;
+}
+
+nav a:hover {
+  color: #FFF;
 }
 
 nav ul {
@@ -55,12 +99,22 @@ main {
 	/*border: 2px solid black;*/
   display: inline-block;
 	margin: 0px 0px 0px 75px;
+  padding: 5px;
 	font-size: 16px;
   width: 60%;
+  background-color: #FFF;
+  opacity: .6;
 }
 
+pre {
+  /*border: 1px solid black;*/
+  padding: 10px;
+  background-color: #a1a3a3;
+}
+
+/*
 aside {
-  /*border: 2px solid black;*/
+  border: 2px solid black;
   display: inline-block;
   position: absolute;
   padding: 5px;
@@ -74,28 +128,24 @@ aside img {
 
 aside ul {
   list-style-type: none;
-  /*display: inline;*/
+  display: inline;
   border: 0px;
   padding: 5px;
   margin: 0px;
 }
 
 aside ul li {
-/*  display: inline;*/
+  display: inline;
 }
+*/
 
 #social-icons {
   display: inline;
+  margin: 0px 5px 0px 5px;
 }
 
 aside ul li a {
   text-decoration: none;
-}
-
-pre {
-  border: 1px solid black;
-  padding: 10px;
-  background-color: #a1a3a3;
 }
 
 footer {
@@ -105,4 +155,3 @@ footer {
 	position: fixed;
 	bottom: 0%;
 }
-
