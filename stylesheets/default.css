@@ -83,12 +83,13 @@ nav a:hover {
 nav ul {
 	list-style-type: none;
 	display: inline;
-	margin:0;
-	padding:0;
+	margin: 0px;
+	padding: 0px 0px 0px 5px;
 }
 
 nav ul li {
-	display:inline;
+	display: inline;
+  padding: 0px 5px 0px 5px;
 }
 
 nav ul li a {
