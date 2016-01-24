@@ -107,23 +107,22 @@ main {
   opacity: .6;
 }
 
-main ul {
+section {
+}
+
+section ul {
   text-align: center;
 }
 
-main ul li {
-  display: inline-block;
-  }
-
-section {
+section ul li {
   border: 2px solid black;
   margin: 10px 5px 35px 5px;
   padding: 30px 10px 10px 10px;
   height: 150px;
   width: 225px;
   text-align: center;
-}
-
+  display: inline-block;
+  }
 
 pre {
   /*border: 1px solid black;*/
