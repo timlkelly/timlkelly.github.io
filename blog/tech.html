@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <title>tim l kelly</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">timkelly</a>
+    </header>
+    <nav>
+      <ul>  
+        <li><a href="index.html">blog</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li><a href="../projects/index.html">projects</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Regular Expressions</h2>
+      1.30.2016
+      <br>
+      <p>
+        Regular expressions, also know as regexp or regex, is a sequence of characters that is used to define a search pattern.  They are mainly used for searching through strings by pattern matching. In Ruby the regex constructor is <code>//</code>. This is an empty expression but the pattern would go in between the forward slashes. The method <code>match</code> can be used to detect matches in a string. <code>Match</code> is both a regex and string method so it can be used either way.
+
+        <pre>puts "Match!" if /cat/.match("There's a cat in this string!")<br>puts "Match!" if "There's a cat in this string!".match(/cat/)</pre>
+
+        Ruby also provides a regex operator: <code>=~</code>. 
+
+        <pre>puts "Match!"if "There's a cat in this string!" =~ /cat/</pre>
+
+        Though the <code>=~</code> operator will return the numerical index of the character in the string where the match started.  <code>Match</code> will return an instance of the class <code>MatchData:</code>
+      </p>
+      <p>
+        Here are some additional regular expression search parameters.
+      </p>
+      <p>
+        <code>.</code> is the wild card character <code>c.t</code> would match "cat"
+      </p>
+      <p>
+        Square brackets <code>[]</code> can be used can be used to match a single character or through a range. <code>[cat]</code> would match the characters "c", "a", and "t". <code>[a-g]</code> would match any lower case character a through g. <code>[cb]at</code> would match "cat" and "bat".
+      </p>
+      <p>
+        <code>[^ ]</code> matches a single character that is not inside of the brackets. <code>[^cat]</code> will match any character other than "c", "a", or "t".
+      </p>
+      <p>
+        <code>^</code> before the pattern will match if the starting position or line of the string begins with that pattern.
+        <code>$</code>is the opposite of <code>^</code>. It looks for matches at the end of the string
+      </p>
+      <p>
+        <code>/^cat/.match("Hello cat")</code> would not match cat but <code>/$cat/.match("Hello cat")</code>would.
+      </p>
+      <p>
+        <code>()</code> allows for submatches or subexpressions. These can later be recalled with <code>$n</code> where n refers to the subexpression that was set. If you were to use a regular expression with multiple subexpressions you could recall the first one with <code>$1</code>, <code>$2</code> would recall the second subexpression and so on.
+      </p>
+      <p>
+        <code>{}</code> specifies exactly how many repetitions of the pattern to match by providing a number inside the curly braces directly after the expression to be matched. <code>/\d{3}/</code> will match exactly three digits. Ranges can be specified like so <code>{3,7}</code> which would return any matches between three to seven and lastly <code>{3,}</code> results in three or more.
+      </p>
+      <p>
+        <code>*</code> and <code>+</code> are the zero or more and one or more quantifiers, respectively.  They will return as much of the string as they possibly can.  Adding a <code>?</code> after either quantifier will make them stop at the end of the first match.
+      </p>
+      <p>
+        Regular expressions seem like powerful tools but they can easily become overwhelming to decipher. What do you imagine <code>\b(\w)?(\w)\w?\2\1</code> does? Or how about <code>\b\d{3}[-.]?\d{3}[-.]?\d{4}\b</code>? Well the first one will return two to five letter palindromes and the second returns phone numbers that use hyphons, periods or do not contain a spacer. As with anything, I'm sure you can read these faster as you use regex more and more, however it does provide for a rather steep learning curve. 
+      </p>
+      <p>
+        <a href="regexr.com">regexr.com</a> is a great interactive website to learn and experiment with regular expressions. Check it out!
+      </p>
+    </main>
+    <footer>
+      footer
+    </footer>
+
+  </body>
+</html>
