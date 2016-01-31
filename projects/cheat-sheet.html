@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <title>tim l kelly</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">timkelly</a>
+    </header>
+    <nav>
+      <ul>  
+        <li><a href="../blog/index.html">blog</a></li>
+        <li><a href="../about.html">about</a></li>
+        <li><a href="index.html">projects</a></li>
+        <li><a href="../contact.html">contact</a></li>
+      </ul>
+    </nav>
+    <main>
+    <h3>Looping cheat sheet</h3>
+    <p>
+      While Ruby has more loops to use compared to Javascript, the two they share in common act similarly.  The syntax is rather different between the two.  I've created this cheat sheet to provide a quick comparison of the syntax between the two.
+    </p>
+    <p>
+      <h4>Ruby Loops:</h4>
+      <code>for</code>
+      used to repeat action a desired amount of times.
+      <pre>for n in 1...50 do<br> puts "hi"<br>end</pre>
+      Can also be written as:
+      <pre>50.times do |n|<br> puts "hi"<br>end</pre>
+      <code>while</code>
+      runs while conditional is true
+      <pre>while i < 100<br> puts "hi"<br> i += 1<br>end</pre>
+      <code>until</code>
+      The opposite of while, until runs until the conditional is false
+      <pre>n = 10<br>until n < 2<br> puts "hi"<br> n-=1<br>end</pre>
+      <code>each</code>
+      each can be used to iterate over data sets
+      <pre>cars = [sedan, truck, hatchback, convertible]<br>cars.each { |type| puts type }</pre>
+      also written as
+      <pre>cars.each do |type|<br> puts type<br>end</pre>
+
+      <h4>Javascript Loops:</h4>
+      <code>while</code> runs until condition is false
+      <pre>while (n < 23) {<br> puts "hi";<br> n++;<br>}</pre>
+      <code>for</code> loops a number of times
+      <pre>for (var i = 0; i > 50; i++){<br> puts "hi";<br>}</pre>
+    </p>
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>
